@@ -170,4 +170,44 @@ footer {
 .image-gallery img:hover {
   transform: scale(1.05);    
   cursor: pointer;
+
+}
+/* Prevent horizontal scroll */
+body {
+  overflow-x: hidden;
+}
+
+/* Make all sections responsive */
+section {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Contact section mobile fix */
+#contact {
+  width: 100%;
+}
+
+/* If using flex layout */
+@media (max-width: 768px) {
+
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-left,
+  .contact-right {
+    width: 100%;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+  }
+
+}
+* {
+  max-width: 100%;
 }
