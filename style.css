@@ -211,3 +211,34 @@ section {
 * {
   max-width: 100%;
 }
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0 8px;   /* 👈 spacing kam ki */
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 15px;
+}
+
+/* Mobile adjustment */
+@media (max-width: 768px) {
+
+  nav ul li {
+    margin: 0 5px;  /* aur kam spacing */
+  }
+
+  nav ul li a {
+    font-size: 13px;  /* thoda chhota text */
+  }
+
+}
+
